@@ -55,7 +55,7 @@ const Thumb = styled.span<ThumbProps>`
   background: rgba(0, 0, 0, .4);
 
   ${({ active }) => active && css`
-    &::after{
+    &::after {
     content: '';
     display: block;
     height: inherit;
@@ -80,7 +80,7 @@ const SlideButton = styled.button`
 `
 
 interface Slides {
-  id: number
+  id: string
   img: string
   alt: string
 }
