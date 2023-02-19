@@ -1,26 +1,37 @@
 import { Slide } from "./components/Slide";
 
+export interface Slides {
+  id: string;
+  src: string;
+  type: 'img' | 'video'
+}
+
 export function App() {
-  const slides = [
+  const slides: Slides[] = [
     {
       id: '1', 
-      img: "/img1.jpg",
-      alt: "Girafa 1"
+      src: "/img1.jpg",
+      type: 'img',
     }, 
     {
       id: '2',
-      img: "/img2.jpg",
-      alt: "Girafa 2"
+      src: "/img2.jpg",
+      type: 'img',
     },
     {
       id: '3',
-      img: "/img3.jpg",
-      alt: "Girafa 3"
+      src: "/img3.jpg",
+      type: 'img',
     },
     {
       id: '4',
-      img: "/img4.jpg",
-      alt: "Girafa 4"
+      src: "/img4.jpg",
+      type: 'img',
+    },
+    {
+      id: '5',
+      src: "/video.mp4",
+      type: 'video',
     }
   ]
 
