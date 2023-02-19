@@ -47,7 +47,7 @@ const SlideVideo = styled.video`
 const SlideNav = styled.nav`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto 1fr;
 
   width: 100%;
   grid-area: 1/1;
