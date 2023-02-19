@@ -6,7 +6,7 @@ export const useTimeout = () => {
   const [startTime, setStartTime] = useState(0);
   const [timeLeft, setTimeLeft] = useState(0);
 
-  function timeout(handler: TimerHandler, time: number) {
+  function start(handler: TimerHandler, time: number) {
     timeoutRef.current = setTimeout(handler, time);
     handlerRef.current = handler;
     setStartTime(Date.now());
@@ -31,7 +31,7 @@ export const useTimeout = () => {
   }
 
   return {
-    timeout,
+    start,
     clear,
     pause,
     resume,
